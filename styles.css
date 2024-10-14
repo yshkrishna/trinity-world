@@ -83,6 +83,17 @@ nav ul li a {
     padding: 30px;
     width: 30%;
     text-align: center; /* Center align text */
+    
+   /* Animation */
+   transform: translateY(20px);
+   opacity: 0; 
+   transition: all 0.5s ease-in-out; /* Smooth transition for animation */
+}
+
+/* Animation for cards on scroll */
+.card.visible {
+   transform: translateY(0);
+   opacity: 1; 
 }
 
 .card h3 {
@@ -111,6 +122,6 @@ footer {
 
 /* Card Hover Effect */
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
+   transform: scale(1.05); /* Slightly enlarge on hover */
+   transition: transform 0.3s ease; /* Smooth transition */
 }
