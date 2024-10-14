@@ -11,22 +11,22 @@ body {
 header {
     background: linear-gradient(to right, #4CAF50, #81C784);
     color: white;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .cta-button {
     background-color: #fff;
     color: #4CAF50;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -59,7 +59,7 @@ nav ul li a {
 .about-section,
 .services-section,
 .contact-section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .about-section h2,
@@ -76,17 +76,42 @@ nav ul li a {
 .card {
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
     width: 30%;
+    text-align: center; /* Center align text */
 }
 
 .card h3 {
-    margin-top: 0;
+   margin-top: 15px; /* Add some spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .service-cards {
+       flex-direction: column; 
+       align-items: center; 
+   }
+
+   .card {
+       width: 80%; 
+       margin-bottom: 20px; 
+   }
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 40px 0; /* Increased padding for footer */
+}
+
+header {
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+}
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
