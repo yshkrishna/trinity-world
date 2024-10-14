@@ -13,7 +13,7 @@ header {
     color: white;
     padding: 80px 0;
     text-align: center;
-    background-image: url('path-to-your-image.jpg'); /* Add your image path here */
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJ1c3NpbmVzc3xlbnwwfHx8fDE2ODU3NTQ5Mjg&ixlib=rb-4.0.3&q=80&w=1080'); /* Add your image path here */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the image */
 }
