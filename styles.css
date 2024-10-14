@@ -9,13 +9,10 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #4CAF50, #81C784);
+    background: linear-gradient(to right, rgba(76, 175, 80, 0.7), rgba(129, 199, 132, 0.7));
     color: white;
     padding: 80px 0;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJ1c3NpbmVzc3xlbnwwfHx8fDE2ODU3NTQ5Mjg&ixlib=rb-4.0.3&q=80&w=1080'); /* Add your image path here */
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the image */
 }
 
 header h1 {
@@ -32,7 +29,6 @@ header p {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 nav {
@@ -61,42 +57,36 @@ nav ul li a {
 
 .about-section,
 .services-section,
+.projects-section,
+.testimonials-section,
 .contact-section {
     padding: 60px 0;
 }
 
 .about-section h2,
 .services-section h2,
+.projects-section h2,
+.testimonials-section h2,
 .contact-section h2 {
-    text-align: center;
+   text-align: center; 
 }
 
 .service-cards {
-    display: flex;
-    justify-content: space-around;
+   display: flex; 
+   justify-content: space-around; 
 }
 
 .card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    padding: 30px;
-    width: 30%;
-    
-   /* Animation */
-   transform: translateY(20px);
-   opacity: 0; 
-   transition: all 0.5s ease-in-out; /* Smooth transition for animation */
-}
-
-/* Animation for cards on scroll */
-.card.visible {
-   transform: translateY(0);
-   opacity: 1; 
+   background-color: #f9f9f9; 
+   border-radius: 10px; 
+   box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+   padding: 30px; 
+   width: 30%; 
+   text-align: center; 
 }
 
 .card h3 {
-   margin-top: 15px; /* Add some spacing */
+   margin-top: 15px; 
 }
 
 /* Responsive Design */
@@ -113,14 +103,30 @@ nav ul li a {
 }
 
 footer {
-   background-color: #333;
-   color: white;
-   text-align: center;
-   padding: 40px 0; /* Increased padding for footer */
+   background-color: #333; 
+   color: white; 
+   text-align: center; 
+   padding: 40px 0; 
 }
 
-/* Card Hover Effect */
-.card:hover {
-   transform: scale(1.05); /* Slightly enlarge on hover */
-   transition: transform 0.3s ease; /* Smooth transition */
+/* Form Styles */
+form {
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+}
+
+form input,
+form textarea {
+   width: 80%; 
+   margin-bottom: 15px; 
+   padding: 10px; 
+}
+
+form button {
+   background-color: #4CAF50; 
+   color: white; 
+   border: none; 
+   padding: 10px 20px; 
+   cursor: pointer; 
 }
