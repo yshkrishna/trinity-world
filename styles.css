@@ -5,11 +5,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 header {
-    background: linear-gradient(to right, rgba(76, 175, 80, 0.7), rgba(129, 199, 132, 0.7));
+    background: linear-gradient(to right, rgba(76, 175, 80, 0.8), rgba(129, 199, 132, 0.8));
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -28,7 +27,6 @@ header p {
     color: #4CAF50;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
 }
 
 nav {
@@ -60,14 +58,7 @@ nav ul li a {
 .projects-section,
 .testimonials-section,
 .contact-section {
-    padding: 60px 0;
-}
-
-.about-section h2,
-.services-section h2,
-.projects-section h2,
-.testimonials-section h2,
-.contact-section h2 {
+   padding: 60px 0; 
    text-align: center; 
 }
 
@@ -89,17 +80,14 @@ nav ul li a {
    margin-top: 15px; 
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-   .service-cards {
-       flex-direction: column; 
-       align-items: center; 
-   }
+/* Project Cards */
+.project-card {
+   margin-bottom: 20px; 
+}
 
-   .card {
-       width: 80%; 
-       margin-bottom: 20px; 
-   }
+.project-card img {
+   width: 100%; 
+   border-radius: 10px; 
 }
 
 footer {
@@ -107,26 +95,4 @@ footer {
    color: white; 
    text-align: center; 
    padding: 40px 0; 
-}
-
-/* Form Styles */
-form {
-   display: flex; 
-   flex-direction: column; 
-   align-items: center; 
-}
-
-form input,
-form textarea {
-   width: 80%; 
-   margin-bottom: 15px; 
-   padding: 10px; 
-}
-
-form button {
-   background-color: #4CAF50; 
-   color: white; 
-   border: none; 
-   padding: 10px 20px; 
-   cursor: pointer; 
 }
