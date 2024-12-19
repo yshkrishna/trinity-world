@@ -19,7 +19,7 @@
         .container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: 15px;
+            gap: 10px;
             padding: 20px;
             max-width: 1200px;
             margin: auto;
@@ -31,7 +31,7 @@
         }
 
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             font-weight: bold;
             color: #FFD700;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -42,20 +42,20 @@
         }
 
         .box {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 0.95em;
         }
 
         .box h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 1.4em;
+            margin-bottom: 5px;
         }
 
         .box p, .box ul {
-            font-size: 1em;
-            margin-bottom: 10px;
+            margin: 5px 0;
         }
 
         .box ul {
@@ -64,7 +64,7 @@
         }
 
         .box ul li {
-            margin: 5px 0;
+            margin: 3px 0;
         }
 
         .image-container {
@@ -82,11 +82,11 @@
             grid-column: span 12;
         }
 
-        .box-2col {
+        .box-6col {
             grid-column: span 6;
         }
 
-        .box-3col {
+        .box-4col {
             grid-column: span 4;
         }
 
@@ -94,7 +94,7 @@
             .container {
                 grid-template-columns: repeat(6, 1fr);
             }
-            .box-2col, .box-3col {
+            .box-6col, .box-4col {
                 grid-column: span 6;
             }
         }
@@ -112,7 +112,7 @@
         <p>This document explores ideas that challenge our understanding of reality, suggesting that existence transcends physical perception. It discusses key concepts in modern physics that reveal reality as a construct similar to a matrix, where our perceptions may not reflect the true nature of existence. By integrating insights from both contemporary science and ancient wisdom traditions, we aim to illuminate the profound mysteries of existence and the interconnectedness of all things.</p>
     </div>
 
-    <div class="box box-2col">
+    <div class="box box-6col">
         <h2>Cosmic Speed Limit</h2>
         <p>The cosmic speed limit, defined by Einstein's theory of relativity, asserts that nothing can travel faster than the speed of light (approximately 300,000 kilometers per second). This principle has significant implications for our understanding of space, time, and causality.</p>
         <ul>
@@ -121,14 +121,7 @@
         </ul>
     </div>
 
-    <div class="box box-3col">
-        <div class="image-container">
-            <h3>Time Dilation: The Twin Paradox</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Twin-paradox.svg" alt="Twin Paradox">
-        </div>
-    </div>
-
-    <div class="box box-2col">
+    <div class="box box-6col">
         <h2>Wave-Particle Duality</h2>
         <p>Wave-particle duality is a cornerstone of quantum mechanics, where particles like electrons exhibit both wave-like and particle-like properties. This is experimentally demonstrated in the double-slit experiment.</p>
         <ul>
@@ -136,19 +129,38 @@
             <li><strong>Philosophical Insight:</strong> Mirrors ancient teachings about duality and existence beyond physical form.</li>
         </ul>
     </div>
+	
+	 <div class="box content-box">
+        <h2>Scriptural References</h2>
+        <ul>
+            <li><strong>King Indradyumna's Journey (Skanda Purana):</strong> Time distortion during his visit to Brahmaloka.</li>
+            <li><strong>Balarama's Father-in-Law Ravataha (Mahabharata):</strong> Time flows differently in heavenly realms.</li>
+            <!-- <li><strong>Kakabhushundi's Vision (Valmiki Ramayana):</strong> Eternal sage experiences multiple iterations of time.</li> -->
+        </ul>
+    </div>
 
-    <div class="box box-3col">
+    <div class="box box-4col">
+        <div class="image-container">
+            <h3>Time Dilation: The Twin Paradox</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Twin-paradox.svg" alt="Twin Paradox">
+        </div>
+    </div>
+
+    <div class="box box-4col">
         <div class="image-container">
             <h3>The Double-Slit Experiment</h3>
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Double-slit.svg" alt="Double-Slit Experiment">
         </div>
+    </div>
+
+    <div class="box box-4col">
         <div class="image-container">
             <h3>The Double-Slit Experiment (With Measurements)</h3>
             <img src="https://as2.ftcdn.net/v2/jpg/04/93/21/87/1000_F_493218732_0DKYAhboySeO0RJOZaYjQIL2X2F2quad.jpg" alt="Double-Slit Experiment with Measurements">
         </div>
     </div>
 
-    <div class="box box-2col">
+    <div class="box box-6col">
         <h2>Quantum Entanglement</h2>
         <p>Quantum entanglement occurs when particles become interconnected, so the state of one influences the other instantaneously, regardless of distance.</p>
         <ul>
@@ -157,14 +169,7 @@
         </ul>
     </div>
 
-    <div class="box box-3col">
-        <div class="image-container">
-            <h3>Quantum Entanglement Visualization</h3>
-            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ye4rx3dO6zCj2ndpuhD02A.png" alt="Quantum Entanglement">
-        </div>
-    </div>
-
-    <div class="box box-2col">
+    <div class="box box-6col">
         <h2>Nonlocality</h2>
         <p>Nonlocality challenges traditional notions of locality and causality by suggesting that distant events can influence each other without a direct connection.</p>
         <ul>
@@ -182,6 +187,7 @@
             <li><strong>Karma:</strong> The law of karma reflects interconnectedness and the consequences of actions, aligning with systems theory.</li>
         </ul>
     </div>
+
 
     <div class="box content-box">
         <h2>Conclusion</h2>
