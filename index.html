@@ -90,12 +90,31 @@
             grid-column: span 4;
         }
 
+        /* Mobile View */
         @media (max-width: 768px) {
             .container {
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(12, 1fr);
             }
             .box-6col, .box-4col {
-                grid-column: span 6;
+                grid-column: span 12; /* Stacking content for better readability */
+            }
+            .image-container img {
+                width: 100%; /* Ensures images are fully responsive */
+                height: auto;
+                object-fit: contain;
+            }
+            .header h1 {
+                font-size: 1.8em; /* Adjust header size for smaller screens */
+            }
+            .box h2 {
+                font-size: 1.3em; /* Adjust section headers for readability */
+            }
+        }
+
+        /* Larger screens */
+        @media (min-width: 769px) {
+            .container {
+                grid-template-columns: repeat(12, 1fr);
             }
         }
     </style>
@@ -258,9 +277,6 @@
         </ul>
     </div>
 </div>
-
-
-
 
     <div class="box content-box">
         <h2>Conclusion: A Unified Understanding of Reality</h2>
