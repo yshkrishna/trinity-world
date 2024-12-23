@@ -10,12 +10,11 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-	    background-image: url('white.jpg');
+            background-image: url('white.jpg');
             background-size: cover;
             background-position: center;
             color: #333;
         }
-
         .container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -24,7 +23,6 @@
             max-width: 1200px;
             margin: auto;
         }
-
         .header {
             grid-column: span 12;
             text-align: center;
@@ -33,8 +31,7 @@
             align-items: center;
             flex-wrap: wrap;
         }
-
-         .header h1 {
+        .header h1 {
             font-size: 2.2em;
             font-weight: bold;
             color: #FFD700;
@@ -43,9 +40,7 @@
             padding: 10px 0;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            white-space: nowrap; /* Prevents wrapping */
         }
-
         .box {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 15px;
@@ -53,295 +48,255 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             font-size: 0.95em;
         }
-
         .box h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-
         .box p, .box ul {
             margin: 10px 0;
         }
-
         .box ul {
             list-style-type: none;
             padding: 0;
         }
-
         .box ul li {
             margin: 5px 0;
         }
-
         .image-container {
             text-align: center;
         }
-
         .image-container img {
             width: 100%;
             height: auto;
             object-fit: contain;
             border-radius: 8px;
         }
-
         .content-box {
-            grid-column: span 12;
+            grid-column: span 12; 
         }
-
         .box-6col {
-            grid-column: span 6;
+            grid-column: span 6; 
         }
-
         .box-4col {
-            grid-column: span 4;
+            grid-column: span 4; 
         }
 
         /* Mobile View */
         @media (max-width: 768px) {
-            .container {
-                grid-template-columns: repeat(12, 1fr);
-            }
-            .box-6col, .box-4col {
-                grid-column: span 12; /* Stacking content for better readability */
-            }
-            .image-container img {
-                width: 100%; /* Ensures images are fully responsive */
-                height: auto;
-                object-fit: contain;
-            }
-            .header h1 {
-                font-size: 1.8em; /* Adjust header size for smaller screens */
-            }
-            .box h2 {
-                font-size: 1.3em; /* Adjust section headers for readability */
-            }
-        }
+          .container {
+              grid-template-columns: repeat(12, 1fr);
+          }
+          .box-6col, .box-4col {
+              grid-column: span 12; /* Stacking content for better readability */
+          }
+          .image-container img {
+              width: 100%; /* Ensures images are fully responsive */
+              height: auto; 
+          }
+          .header h1 {
+              font-size: 1.8em; /* Adjust header size for smaller screens */
+          }
+          .box h2 {
+              font-size: 1.3em; /* Adjust section headers for readability */
+          }
+      }
 
-        /* Larger screens */
-        @media (min-width: 769px) {
-            .container {
-                grid-template-columns: repeat(12, 1fr);
-            }
-        }
+      /* Larger screens */
+      @media (min-width: 769px) {
+          .container {
+              grid-template-columns: repeat(12, 1fr);
+          } 
+      }
 
-        /* Add grid layout for Ancient Wisdom section */
-        .wisdom-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
+      /* Add grid layout for Ancient Wisdom section */
+      .wisdom-list {
+          display: grid; 
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 10px; 
+      }
 
-        .wisdom-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+      .wisdom-item { 
+          background-color: rgba(255, 255, 255, 0.8); 
+          padding: 15px; 
+          border-radius: 8px; 
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+      }
 
-        .wisdom-title {
-            font-size: 1.3em;
-            margin-bottom: 10px;
-        }
-		
-		.author-box {
-            text-align: right; /* Align text to the right */
-			color: #FFD700;
-            text-shadow: 2px 2px 4px #000;
-        }
-	
+      .wisdom-title { 
+          font-size: 1.3em; 
+          margin-bottom: 10px; 
+      }
+
+      .author-box { 
+          text-align: right; /* Align text to the right */ 
+          color: #FFD700; 
+          text-shadow: 2px 2px 4px #000; 
+      } 
+
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="header">
-        <h1>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</h1>
-    </div>
-
-    <div class="box content-box">
-        <h2>Abstract</h2>
-        <p>This document explores ideas that challenge our understanding of reality, suggesting that existence transcends physical perception. It discusses key concepts of quantum phenomena, along with ancient wisdom traditions that align with these principles. By integrating these insights, we aim to illuminate the profound mysteries of existence and the interconnectedness of all things.</p>
-    </div>
-    
-    <div class="box content-box">
-        <h2>Human Bodily Limitations and Perception</h2>
-        <p>Human beings are limited in their ability to perceive the world around them. The electromagnetic spectrum, for example, encompasses a range of wavelengths from gamma rays to radio waves, but the human eye can only detect a narrow range of visible light (approximately 400 to 700 nanometers). Similarly, the human sense of hearing is confined to frequencies between 20 Hz and 20 kHz.</p>
-        <p>Science shows that humans are limited in their ability to perceive the vast complexities of the cosmos. Yet, ancient scriptures, such as the <em>Bhagavad Gita</em>, align with this idea, stating that the senses are constrained in their ability to access the deeper truths of the universe.</p>
-        <p>In <em>Bhagavad Gita</em> 3.42, it is said:</p>
-        <blockquote>
-            "Indriyani parany ahur indriyebhyah param manah,<br>
-            manasastu para buddhir yo buddheh paratastu sah" (Bhagavad Gita 3.42)
-        </blockquote>
-        <p>This verse speaks of the limitations of the senses and how the mind is a more refined instrument of perception. It suggests that even our cognitive faculties are constrained, and higher knowledge requires the refinement of the intellect.</p>
-    </div>
-
-  <div class="box content-box">
-    <h2>Quantum: The Beyond Imagination</h2>
-    <p>Quantum physics challenges our traditional understanding of the universe, revealing phenomena that seem to defy imagination. From wave-particle duality to quantum entanglement, these concepts push the boundaries of human knowledge and perception. This section explores the unimaginable aspects of quantum mechanics, bridging the gap between science and philosophy.</p>
-
     <div class="container">
-        <!-- Child Topics Under Quantum -->
-        <div class="box box-6col">
-            <h2>Wave-Particle Duality</h2>
-            <p>Wave-particle duality is a cornerstone of quantum mechanics, where particles like electrons exhibit both wave-like and particle-like properties. This is experimentally demonstrated in the double-slit experiment.</p>
-            <ul>
-                <li><strong>Experiment Overview:</strong> Shows how the act of observation affects the behavior of particles, suggesting consciousness plays a role in shaping reality.</li>
-                <li><strong>Philosophical Insight:</strong> Mirrors ancient teachings about duality and existence beyond physical form.</li>
+       <div class="header">
+           <h1>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</h1>
+       </div>
+
+       <div class="box content-box">
+           <h2>Abstract</h2>
+           <p>This document explores ideas that challenge our understanding of reality, suggesting that existence transcends physical perception. It discusses key concepts of quantum phenomena along with ancient wisdom traditions that align with these principles. By integrating these insights, we aim to illuminate the profound mysteries of existence and the interconnectedness of all things.</p>
+       </div>
+
+       <div class="box content-box">
+           <h2>Human Bodily Limitations and Perception</h2>
+           <p>Human beings are limited in their ability to perceive the world around them. The electromagnetic spectrum encompasses a range of wavelengths from gamma rays to radio waves, but the human eye can only detect a narrow range of visible light (approximately 400 to 700 nanometers). Similarly, the human sense of hearing is confined to frequencies between 20 Hz and 20 kHz.</p>
+           <p>Science shows that humans are limited in their ability to perceive the vast complexities of the cosmos. Yet, ancient scriptures like the <em>Bhagavad Gita</em> align with this idea, stating that the senses are constrained in their ability to access deeper truths.</p>
+           <p>In <em>Bhagavad Gita</em> Chapter 3, Verse 42:</p>
+           <blockquote> "Indriyani parany ahur indriyebhyah param manah,<br> manasastu para buddhir yo buddheh paratastu sah" (Bhagavad Gita 3.42) </blockquote>
+           <p>This verse speaks of the limitations of the senses and how the mind is a more refined instrument of perception. It suggests that even our cognitive faculties are constrained and higher knowledge requires refinement of intellect.</p>
+       </div>
+
+       <div class="box content-box">
+           <h2>Quantum Mechanics Beyond Imagination</h2>
+           <p>Quantum physics challenges our traditional understanding of the universe, revealing phenomena that seem to defy imagination. From wave-particle duality to quantum entanglement, these concepts push the boundaries of human knowledge and perception. This section explores these unimaginable aspects of quantum mechanics while bridging gaps between science and philosophy.</p>
+
+           <div class="container"> <!-- Child Topics Under Quantum -->
+               <div class="box box-6col">
+                   <h2>Wave-Particle Duality</h2>
+                   <p>Wave-particle duality is a cornerstone of quantum mechanics where particles like electrons exhibit both wave-like and particle-like properties. This is experimentally demonstrated in the double-slit experiment.</p>
+                   <ul>
+                       <li><strong>Experiment Overview:</strong> Shows how observation affects particle behavior suggesting consciousness plays a role in shaping reality.</li>
+                       <li><strong>Philosophical Insight:</strong> Mirrors ancient teachings about duality and existence beyond physical form.</li>
+                   </ul>
+               </div>
+
+               <div class="box box-6col">
+                   <h2>The Observer Effect</h2>
+                   <p>The observer effect reveals that a quantum system's state is influenced by the observer's consciousness highlighting the active role of awareness in shaping reality.</p>
+                   <ul>
+                       <li><strong>Implications:</strong> The act of observation can alter quantum experiments' outcomes suggesting consciousness plays a fundamental role in reality's fabric.</li>
+                       <li><strong>Philosophical Insight:</strong> This aligns with various philosophies suggesting consciousness is not merely passive but integral to creation.</li>
+                   </ul>
+               </div>
+
+               <div class="box box-4col">
+                   <div class="image-container">
+                       <h3>The Double-Slit Experiment</h3>
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Double-slit.svg" alt="Double-Slit Experiment">
+                   </div>
+               </div>
+
+               <div class="box box-4col">
+                   <div class="image-container">
+                       <h3>The Double-Slit Experiment (With Measurements)</h3>
+                       <img src="measure.jpg" alt="Double-Slit Experiment with Measurements">
+                   </div>
+               </div>
+
+               <div class="box box-4col">
+                   <div class="image-container">
+                       <h3>Quantum Entanglement</h3>
+                       <img src="entangle.png" alt="EPR Paradox">
+                   </div>
+               </div>
+
+               <!-- Quantum Superposition -->
+               <div class="box box-6col">
+                   <h2>Quantum Superposition</h2>
+                   <p>Quantum superposition illustrates that particles exist in multiple states until observed suggesting a fluid reality shaped by perception.</p>
+                   <ul>
+                       <li><strong>Implications:</strong> This principle challenges classical notions indicating outcomes are not predetermined but depend on measurement leading to a probabilistic rather than deterministic view.</li>
+                       <li><strong>Philosophical Insight:</strong> This resonates with views emphasizing interconnectedness and how consciousness plays crucial roles in defining existence and reality.</li>
+                   </ul>
+               </div>
+
+               <!-- Quantum Decoherence -->
+               <div class="box box-6col">
+                   <h2>Quantum Decoherence</h2>
+                   <p>Quantum decoherence explains how quantum systems lose coherence appearing classical when interacting with their environment reflecting how our perception is influenced by consciousness.</p>
+                   <ul>
+                       <li><strong>Implications:</strong> Just as decoherence causes systems to transition into definite states our perception is shaped by consciousness influenced by sensory limitations.</li>
+                       <li><strong>Philosophical Insight:</strong> This mirrors ancient ideas suggesting minds limit access to higher knowledge requiring deeper awareness to transcend fragmentation.</li>
+                   </ul>
+               </div>
+
+               <!-- Quantum Entanglement -->
+               <div class="box box-6col">
+                   <h2>Quantum Entanglement</h2>
+                   <p>Quantum entanglement occurs when particles become interconnected such that one influences another instantaneously regardless of distance.</p>
+                   <ul>
+                       <li><strong>Implications:</strong> Correlations defy classical physics demonstrating interconnectedness at a fundamental level.</li>
+                       <li><strong>Philosophical Insight:</strong> Aligns with ancient wisdom like "Tat Tvam Asi" (You are That) suggesting unity among all things.</li>
+                   </ul>
+               </div>
+
+               <!-- Nonlocality -->
+               <div class="box box-6col">
+                   <h2>Nonlocality</h2>
+                   <p>Nonlocality challenges traditional notions of locality and causality suggesting distant events can influence each other without direct connection.</p>
+                   <ul>
+                       <li><strong>Implications:</strong> Demonstrates instantaneous transmission of information across space.</li>
+                       <li><strong>Philosophical Insight:</strong> Aligns with ancient philosophies emphasizing interconnectedness.</li>
+                   </ul>
+               </div>
+
+           </div><!-- End container -->
+       </div>
+
+        <div class="box content-box">
+        <h2 class="section-title">Ancient Wisdom</h2>
+        <div class="content-box">
+            <ul class="wisdom-list">
+                <!-- The Role of Consciousness -->
+                <li class="wisdom-item">
+                    <h3 class="wisdom-title">The Role of Consciousness</h3>
+                    <p>The Bhagavad Gita emphasizes consciousness' role in shaping reality aligning with observer effect in quantum mechanics where observation influences outcomes.</p>
+                    <p><strong>Sanskrit:</strong> "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णा अन्यानि संयाति नवानि देही॥" —<i>Bhagavad Gita 2.22</i></p>
+                    <p><strong>Translation:</strong> "As a person sheds worn-out garments and wears new ones so does the soul cast off its worn-out bodies and enter new ones."</p>
+                    <p>This verse reflects continuity beyond physical change highlighting perception's role in shaping experience.</p>
+                </li>
+
+                <!-- The Illusory Nature of Time and Space -->
+                <li class="wisdom-item">
+                    <h3 class="wisdom-title">The Illusory Nature of Time and Space</h3>
+                    <p>Ancient texts like the Yoga Vasistha discuss the illusory nature of time and space similar to quantum nonlocality where events are interconnected beyond classical boundaries.</p>
+                    <p><strong>Sanskrit:</strong> "चित्तमेव हि संसारः तत्प्रबोधाद्विमुच्यते" —<i>Yoga Vasistha 2.18.24</i></p>
+                    <p><strong>Translation:</strong> "The world is an illusion created by the mind. When the mind is awakened it transcends all limitations of time and space."</p>
+                    <p>This suggests that perceived separateness is a mental construct mirroring nonlocality in quantum physics.</p>
+                </li>
+
+                <!-- Brahman and Reality -->
+                <li class="wisdom-item">
+                    <h3 class="wisdom-title">Brahman and Reality</h3>
+                    <p>The Upanishads describe Brahman as formless substratum of all existence similar to quantum superposition where multiple states exist until observed.</p>
+                    <p><strong>Sanskrit:</strong> "एकोऽहमस्मि सदा न द्वितीयः" —<i>Chandogya Upanishad 6.2.1</i></p>
+                    <p><strong>Translation:</strong> "I am one without a second."</p>
+                    <p><strong>Sanskrit:</strong> "सर्वं खल्विदं ब्रह्म तज्जलानिति शान्त उपासीत" —<i>Chandogya Upanishad 3.14.1</i></p>
+                    <p><strong>Translation:</strong> "All this is indeed Brahman. From it all things emanate. Meditate upon it in peace."</p>
+                    <p>This reflects that all possibilities exist within ultimate reality unified until perceived.</p>
+                </li>
+
+                <!-- Transcending Ordinary Perception -->
+                <li class="wisdom-item">
+                    <h3 class="wisdom-title">Transcending Ordinary Perception</h3>
+                    <p>In the Bhagavad Gita Lord Krishna speaks about transcending ordinary perception for higher understanding resonating with quantum decoherence where observation shapes reality.</p>
+                    <p><strong>Sanskrit:</strong> "यदा सत्त्वे प्रमाणं यदा चात्मनि स्थितम्। नूनं यस्तु महाप्रज्ञं तं युक्तं परमं यशः॥" —<i>Bhagavad Gita 14.6</i></p>
+                    <p><strong>Translation:</strong> "When one's mind is purified and remains in higher wisdom they can transcend ordinary perceptions understanding reality's nature."</p>
+                    <p>This aligns with transcending physical senses for perceiving ultimate reality akin to how quantum systems lose coherence when observed transitioning into definite states.</p>
+                </li>
             </ul>
         </div>
-        <div class="box box-6col">
-            <h2>The Observer Effect</h2>
-            <p>The observer effect reveals that a quantum system's state is influenced by the observer's consciousness, highlighting the active role of awareness in shaping reality.</p>
-            <ul>
-                <li><strong>Implications:</strong> The act of observation can alter the outcome of quantum experiments, suggesting that consciousness plays a fundamental role in the fabric of reality.</li>
-                <li><strong>Philosophical Insight:</strong> This aligns with ideas in various philosophies that suggest consciousness is not merely a passive observer but an integral part of the universe's creation process.</li>
-            </ul>
-        </div>
-        <div class="box box-4col">
-            <div class="image-container">
-                <h3>The Double-Slit Experiment</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Double-slit.svg" alt="Double-Slit Experiment">
-            </div>
-        </div>
-
-        <div class="box box-4col">
-            <div class="image-container">
-                <h3>The Double-Slit Experiment (With Measurements)</h3>
-                <img src="measure.jpg" alt="Double-Slit Experiment with Measurements">
-            </div>
-        </div>
-        <div class="box box-4col">
-            <div class="image-container">
-                <h3>Quantum Entanglement</h3>
-                <img src="entangle.png" alt="EPR Paradox">
-            </div>
-        </div>
-        
-
-    <!-- Quantum Superposition -->
-    <div class="box box-6col">
-        <h2>Quantum Superposition</h2>
-        <p>Quantum superposition illustrates that particles exist in multiple states until observed, suggesting a fluid reality shaped by perception.</p>
-        <ul>
-            <li><strong>Implications:</strong> This principle challenges classical notions of reality, indicating that outcomes are not predetermined but depend on the act of measurement, leading to the idea that reality is probabilistic rather than deterministic.</li>
-            <li><strong>Philosophical Insight:</strong> This concept resonates with philosophical views that emphasize the interconnectedness of all things and the idea that consciousness and observation play crucial roles in defining existence and reality.</li>
-        </ul>
     </div>
-	
-	<div class="box box-6col">
-        <h2>Quantum Decoherence</h2>
-        <p>Quantum decoherence explains how quantum systems lose their coherence and appear classical when interacting with their environment. This transition reflects how our perception of reality is influenced by consciousness, which shapes how we experience the world.</p>
-        <ul>
-            <li><strong>Implications:</strong> Just as decoherence causes quantum systems to transition into definite states, our perception of reality is shaped by our consciousness and understanding, influenced by the limitations of our senses.</li>
-            <li><strong>Philosophical Insight:</strong> This mirrors the ancient idea that the mind and senses limit access to higher knowledge, suggesting that a deeper awareness is required to transcend the apparent fragmentation of reality.</li>
-        </ul>
-    </div>
 
-        <div class="box box-6col">
-            <h2>Quantum Entanglement</h2>
-            <p>Quantum entanglement occurs when particles become interconnected, so the state of one influences the other instantaneously, regardless of distance.</p>
-            <ul>
-                <li><strong>Implications:</strong> Correlations that defy classical physics and show interconnectedness at a fundamental level.</li>
-                <li><strong>Philosophical Insight:</strong> Aligns with ancient wisdom like "Tat Tvam Asi" (You are That), suggesting the unity of all things.</li>
-            </ul>
-        </div>
-		
-
-        <div class="box box-6col">
-            <h2>Nonlocality</h2>
-            <p>Nonlocality challenges traditional notions of locality and causality by suggesting that distant events can influence each other without a direct connection.</p>
-            <ul>
-                <li><strong>Implications:</strong> Demonstrates instantaneous transmission of information across space.</li>
-                <li><strong>Philosophical Insight:</strong> Aligns with ancient philosophies of interconnectedness.</li>
-            </ul>
-        </div>
-		
-		 
-    </div>
-</div>
-
+    <!-- Conclusion Section -->
     <div class="box content-box">
-    <h2 class="section-title">Ancient Wisdom</h2>
-    <div class="content-box">
-        <ul class="wisdom-list">
-            
-
-            <li class="wisdom-item">
-                <h3 class="wisdom-title">The Role of Consciousness</h3>
-                <p>
-                    The Bhagavad Gita emphasizes consciousness' role in shaping reality, aligning with the observer effect in quantum mechanics, where observation influences outcomes.
-                </p>
-                <p><strong>Sanskrit:</strong> "वासांसि जीर्णानि यथा विहाय, नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णा, अन्यानि संयाति नवानि देही॥" — <i>Bhagavad Gita 2.22</i></p>
-                <p><strong>Translation:</strong> "As a person sheds worn-out garments and wears new ones, so does the soul cast off its worn-out bodies and enter new ones."</p>
-                <p>
-                    This verse reflects the continuity of consciousness beyond physical change, highlighting the role of perception in shaping experience.
-                </p>
-            </li>
-
-            <!-- <li class="wisdom-item"> -->
-                <!-- <h3 class="wisdom-title">Tat Tvam Asi</h3> -->
-                <!-- <p> -->
-                    <!-- "Tat Tvam Asi" (You are That) asserts the unity of all existence, akin to quantum entanglement, where particles remain interconnected regardless of distance. -->
-                <!-- </p> -->
-                <!-- <p><strong>Sanskrit:</strong> "तत् त्वम् असि" — <i>Chandogya Upanishad 6.8.7</i></p> -->
-                <!-- <p><strong>Translation:</strong> "You are That."</p> -->
-                <!-- <p> -->
-                    <!-- This profound statement emphasizes the interconnectedness of all things, reflecting the unity seen in quantum systems. -->
-                <!-- </p> -->
-            <!-- </li> -->
-
-            <li class="wisdom-item">
-                <h3 class="wisdom-title">The Illusory Nature of Time and Space</h3>
-                <p>
-                    Ancient texts like the Yoga Vasistha discuss the illusory nature of time and space, similar to quantum nonlocality, where events are interconnected beyond classical boundaries.
-                </p>
-                <p><strong>Sanskrit:</strong> "चित्तमेव हि संसारः तत्प्रबोधाद्विमुच्यते" — <i>Yoga Vasistha 2.18.24</i></p>
-                <p><strong>Translation:</strong> "The world is an illusion created by the mind. When the mind is awakened, it transcends all limitations of time and space."</p>
-                <p>
-                    This suggests that the perceived separateness of events is a mental construct, mirroring the concept of nonlocality in quantum physics.
-                </p>
-            </li>
-			
-			<li class="wisdom-item">
-                <h3 class="wisdom-title">Brahman and Reality</h3>
-                <p>
-                    The Upanishads describe Brahman as the formless substratum of all existence, similar to quantum superposition, where multiple states exist until observed.
-                </p>
-                <p><strong>Sanskrit:</strong> "एकोऽहमस्मि सदा न द्वितीयः" — <i>Chandogya Upanishad 6.2.1</i></p>
-                <p><strong>Translation:</strong> "I am one without a second."</p>
-                <p><strong>Sanskrit:</strong> "सर्वं खल्विदं ब्रह्म तज्जलानिति शान्त उपासीत" — <i>Chandogya Upanishad 3.14.1</i></p>
-                <p><strong>Translation:</strong> "All this is indeed Brahman. From it all things emanate. Meditate upon it in peace."</p>
-                <p>
-                    This reflects the idea that all possibilities exist within ultimate reality, unified and unobservable until perceived.
-                </p>
-            </li>
-			
-			<li class="wisdom-item">
-                <h3 class="wisdom-title">Transcending Ordinary Perception</h3>
-                <p>
-                    In the Bhagavad Gita, Lord Krishna speaks of the need to transcend ordinary perception to access higher spiritual understanding, resonating with the concept of quantum decoherence where observation shapes reality.
-                </p>
-                <p><strong>Sanskrit:</strong> "यदा सत्त्वे प्रमाणं यदा चात्मनि स्थितम्। नूनं यस्तु महाप्रज्ञं तं युक्तं परमं यशः॥" — <i>Bhagavad Gita 18.62</i></p>
-                <p><strong>Translation:</strong> "When the mind is purified, and a person remains in a state of higher wisdom, they are able to transcend ordinary perceptions and understand the nature of reality."</p>
-                <p>
-                    This aligns with the idea that the limitations of the physical senses must be transcended for one to perceive the ultimate reality, akin to how quantum systems lose their coherence when observed or interacted with, transitioning into definite states.
-                </p>
-            </li>
-			
-        </ul>
-    </div>
-	
-</div>
-
-<div class="box content-box">
-        <h2>Conclusion: A Unified Understanding of Reality</h2>
-        <p>Quantum mechanics and ancient spiritual traditions converge on a profound truth: reality is not fixed; everything is interconnected. The universe operates as a dynamic system where consciousness actively shapes our experiences. By integrating insights from quantum physics with ancient wisdom, we gain a deeper understanding of ultimate reality—one that transcends both time and space.</p>
+        <h2>Conclusion</h2>
+        <p>Quantum mechanics and ancient spiritual traditions converge on a profound truth: reality is not fixed, everything is interconnected. The universe operates as a dynamic system where consciousness actively shapes experiences. By integrating insights from quantum physics with ancient wisdom, we gain deeper understanding of ultimate reality—one transcending both time and space.</p>
     </div>
 
+    <!-- Author Box -->
     <div class="content-box author-box">
-        
-        <p><b>Authored by: </b><strong>Y Sri Hari Krishna, </strong>
-        Senior Software Developer at Anaqua Inc</p>
-    	
-    </div>	
-</body>
-</html>
+        <p><b>Authored by:</b> <strong>Y Sri Hari Krishna</strong>, Senior Software Developer at Anaqua Inc</p>
+    </div>
+
+   < / body >
+   < / html >
