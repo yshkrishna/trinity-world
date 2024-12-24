@@ -39,12 +39,12 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
-	 .header img {
-		 position: absolute;
+		 .header img {
+				position: absolute;
 				top: 10px;
 				left: 10px;
 				height: 60px; /* Adjust the height as needed */
-			}    
+			}
         .box {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px; /* Reduced padding */
@@ -63,11 +63,21 @@
             text-align: center;
         }
         .image-container img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 8px;
-        }
+			width: 80%; /* Slightly smaller than before */
+			max-width: 200px; /* Set an upper limit */
+			height: auto; /* Maintain aspect ratio */
+			object-fit: contain;
+			border-radius: 8px;
+		}
+
+		#logo {
+			width: 110px; /* Set a smaller specific width */
+			height: auto; /* Maintain aspect ratio */
+			max-width: 100%; /* Prevent exceeding container */
+		}
+
+
+
         .content-box {
             grid-column: span 12;
         }
@@ -125,13 +135,14 @@
     </style>
 </head>
 <body>
-   
-<div class="header">
-	<img src="https://binstitute.org/wp-content/uploads/2022/03/Rd035901383d3091aa2d8894dec711f9a.png" alt="Logo">
-           <h1>Beyond the Matrix: Exploring Quantum Realities & Ancient Wisdom</h1>
+    <div class="header"><img id="logo" src="https://binstitute.org/wp-content/uploads/2022/03/Rd035901383d3091aa2d8894dec711f9a.png" alt="Logo">
+
+		<!-- <img src="https://binstitute.org/wp-content/uploads/2022/03/Rd035901383d3091aa2d8894dec711f9a.png" alt="Logo"> -->
+           <h1>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</h1>
        </div>
+
     <div class="container">
-        
+       
        <div class="box content-box">
            <h2>Abstract</h2>
            <p>This document explores ideas that challenge our understanding of reality, suggesting that existence transcends physical perception. It discusses key concepts of quantum phenomena along with ancient wisdom traditions that align with these principles. By integrating these insights, we aim to illuminate the profound mysteries of existence and the interconnectedness of all things.</p>
@@ -281,12 +292,12 @@
     <!-- Conclusion Section -->
     <div class="box content-box">
         <h2>Conclusion</h2>
-        <p>Quantum mechanics and ancient spiritual traditions converge on a profound truth: reality is not fixed, everything is interconnected. The universe operates as a dynamic system where consciousness actively shapes experiences. By integrating insights from quantum physics with ancient wisdom, we gain deeper understanding of ultimate reality.</p>
+        <p>Quantum mechanics and ancient spiritual traditions converge on a profound truth: reality is not fixed, everything is interconnected. The universe operates as a dynamic system where consciousness actively shapes experiences. By integrating insights from quantum physics with ancient wisdom, we gain deeper understanding of ultimate reality—one transcending both time and space.</p>
     </div>
 
     <!-- Author Box -->
     <div class="content-box author-box">
-        <p><b>Authored by:</b> <i><strong>Y Sri Hari Krishna</strong>, Senior Software Developer at Anaqua Inc</i></p>
+        <p><b>Authored by:</b> <strong>Y Sri Hari Krishna</strong>, Senior Software Developer at Anaqua Inc</p>
     </div>
 
    </body>
