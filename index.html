@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</title>
-    <style>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -18,9 +18,9 @@
         .container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: 10px;
-            padding: 10px; /* Reduced padding to minimize space usage */
-            max-width: 1200px;
+            gap: 20px; /* Increased gap for spacious layout */
+            padding: 20px;
+            max-width: 3600px; /* Adjust for 4K resolution */
             margin: auto;
         }
         .header {
@@ -31,36 +31,36 @@
             align-items: center;
         }
         .header h1 {
-            font-size: 2.2em;
+            font-size: 3.5em; /* Increased for 4K readability */
             font-weight: bold;
             color: #FFD700;
-            text-shadow: 2px 2px 4px #000;
+            text-shadow: 3px 3px 6px #000;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
         }
         .box {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px; /* Reduced padding */
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            font-size: 0.95em;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.2em; /* Larger text for readability */
         }
         .box h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 2em;
+            margin-bottom: 15px;
         }
         .box p, .box ul {
-            margin: 8px 0; /* Reduced margin */
+            margin: 12px 0;
         }
         .image-container {
             text-align: center;
         }
         .image-container img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             object-fit: contain;
-            border-radius: 8px;
+            border-radius: 12px;
         }
         .content-box {
             grid-column: span 12;
@@ -72,51 +72,60 @@
             grid-column: span 4;
         }
 
+        /* Responsive Design for Larger Screens */
+        @media (min-width: 2560px) {
+            .header h1 {
+                font-size: 4.5em;
+            }
+            .box h2 {
+                font-size: 2.5em;
+            }
+            .box {
+                font-size: 1.5em;
+                padding: 30px;
+            }
+        }
+
         /* Mobile View */
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: repeat(12, 1fr);
             }
             .box-6col, .box-4col {
-                grid-column: span 12; /* Stack content for better readability */
-            }
-            .image-container img {
-                width: 100%;
+                grid-column: span 12;
             }
             .header h1 {
-                font-size: 1.8em; /* Adjust header size for smaller screens */
+                font-size: 2em;
             }
             .box h2 {
-                font-size: 1.3em; /* Adjust section headers for readability */
+                font-size: 1.5em;
             }
         }
 
-        /* Adjust grid layout for Ancient Wisdom section */
         .wisdom-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
         }
         .wisdom-item {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         .wisdom-title {
-            font-size: 1.3em;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
         .author-box {
             text-align: right;
             color: #FFD700;
             text-shadow: 2px 2px 4px #000;
         }
-		ul {
-			list-style-type: none; /* Removes the bullet */
-		}
-
-    </style>
+        ul {
+            list-style-type: none;
+        }
+    </style>    
 </head>
 <body>
     <div class="header">
