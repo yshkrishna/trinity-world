@@ -18,40 +18,37 @@
         .container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: 10px;
-            padding: 10px; /* Reduced padding to minimize space usage */
-            max-width: 1200px;
+            gap: 20px; /* Increased gap for better spacing */
+            padding: 20px; /* Increased padding */
+            max-width: 1600px; /* Adjusted max-width for larger screens */
             margin: auto;
         }
         .header {
             grid-column: span 12;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         .header h1 {
-            font-size: 2.2em;
+            font-size: 3em; /* Increased font size for better visibility */
             font-weight: bold;
             color: #FFD700;
             text-shadow: 2px 2px 4px #000;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px; /* Increased letter spacing */
         }
         .box {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px; /* Reduced padding */
+            padding: 20px; /* Increased padding */
             border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            font-size: 0.95em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+            font-size: 1em; /* Adjusted font size */
         }
         .box h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 2em; /* Increased section header size */
+            margin-bottom: 15px; /* Adjusted margin */
         }
         .box p, .box ul {
-            margin: 8px 0; /* Reduced margin */
+            margin: 10px 0; /* Adjusted margin */
         }
         .image-container {
             text-align: center;
@@ -66,54 +63,60 @@
             grid-column: span 12;
         }
         .box-6col {
-            grid-column: span 6;
+            grid-column: span 6; 
         }
         .box-4col {
-            grid-column: span 4;
+            grid-column: span 4; 
         }
-
+        
         /* Mobile View */
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: repeat(12, 1fr);
+                padding: 10px; /* Reduced padding for smaller screens */
+                gap: 10px; /* Reduced gap for smaller screens */
             }
             .box-6col, .box-4col {
                 grid-column: span 12; /* Stack content for better readability */
-            }
-            .image-container img {
-                width: 100%;
+                margin-bottom: 15px; /* Added margin between stacked items */
             }
             .header h1 {
-                font-size: 1.8em; /* Adjust header size for smaller screens */
+                font-size: 2.5em; /* Adjust header size for smaller screens */
+                letter-spacing: normal; /* Normal letter spacing for smaller screens */
             }
             .box h2 {
-                font-size: 1.3em; /* Adjust section headers for readability */
+                font-size: 1.5em; /* Adjust section headers for readability */
+                margin-bottom: 10px; 
             }
         }
 
         /* Adjust grid layout for Ancient Wisdom section */
         .wisdom-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Increased gap for better spacing */
         }
+
         .wisdom-item {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
+            padding: 20px; /* Increased padding */
             border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
         }
+
         .wisdom-title {
-            font-size: 1.3em;
-            margin-bottom: 10px;
+            font-size: 1.5em; 
+            margin-bottom: 10px; 
         }
+
         .author-box {
-            text-align: right;
-            color: #FFD700;
-            text-shadow: 2px 2px 4px #000;
-        }
+           text-align:right; 
+           color:#FFD700; 
+           text-shadow:2px2px4px#000; 
+           font-size:.9em; /* Slightly smaller font size for author box */
+       } 
     </style>
-</head>
+	</head>
 <body>
     <div class="header">
            <h1>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</h1>
