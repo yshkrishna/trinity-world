@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond the Matrix: Exploring Quantum Realities and Ancient Wisdom</title>
    <style>
-        body {
+       body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@
 }
 
 .header h1 {
-    font-size: 5vw; /* Font size scales with viewport */
+    font-size: calc(3vw + 2em); /* Font size scales dynamically but with a minimum size */
     font-weight: bold;
     color: #FFD700;
     text-shadow: 2px 2px 4px #000;
@@ -49,11 +49,11 @@
     padding: 3vw; /* Dynamic padding based on viewport */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-size: 2vw; /* Font size scales with viewport */
+    font-size: calc(1.5vw + 1em); /* Font size scales dynamically */
 }
 
 .box h2 {
-    font-size: 3vw;
+    font-size: calc(2vw + 1.5em); /* Header size scales dynamically */
     margin-bottom: 2vw;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .wisdom-title {
-    font-size: 2vw;
+    font-size: calc(1.5vw + 1.2em); /* Adjust wisdom title font size */
     margin-bottom: 1vw;
 }
 
@@ -98,7 +98,7 @@
     text-align: right;
     color: #FFD700;
     text-shadow: 2px 2px 4px #000;
-    font-size: 1.2vw;
+    font-size: calc(1vw + 1.2em); /* Adjust author font size dynamically */
 }
 
 /* Mobile View */
@@ -123,6 +123,42 @@
         margin-bottom: 10px;
     }
 }
+
+/* Adjust grid layout for Ancient Wisdom section */
+.wisdom-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2vw; /* Increased gap for better spacing */
+}
+
+.wisdom-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3vw; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.wisdom-title {
+    font-size: calc(2vw + 2em); 
+    margin-bottom: 2vw; 
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Content Box Adjustment for Large Screens */
+.content-box {
+    padding: 3vw;
+}
+
 
     </style>
 	</head>
