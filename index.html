@@ -19,7 +19,7 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 10px;
-            padding: 20px;
+            padding: 10px; /* Reduced padding to minimize space usage */
             max-width: 1200px;
             margin: auto;
         }
@@ -29,7 +29,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
         }
         .header h1 {
             font-size: 2.2em;
@@ -37,13 +36,12 @@
             color: #FFD700;
             text-shadow: 2px 2px 4px #000;
             margin: 0;
-            padding: 10px 0;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
         .box {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 15px;
+            padding: 10px; /* Reduced padding */
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             font-size: 0.95em;
@@ -53,14 +51,7 @@
             margin-bottom: 10px;
         }
         .box p, .box ul {
-            margin: 10px 0;
-        }
-        .box ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .box ul li {
-            margin: 5px 0;
+            margin: 8px 0; /* Reduced margin */
         }
         .image-container {
             text-align: center;
@@ -72,67 +63,55 @@
             border-radius: 8px;
         }
         .content-box {
-            grid-column: span 12; 
+            grid-column: span 12;
         }
         .box-6col {
-            grid-column: span 6; 
+            grid-column: span 6;
         }
         .box-4col {
-            grid-column: span 4; 
+            grid-column: span 4;
         }
 
         /* Mobile View */
         @media (max-width: 768px) {
-          .container {
-              grid-template-columns: repeat(12, 1fr);
-          }
-          .box-6col, .box-4col {
-              grid-column: span 12; /* Stacking content for better readability */
-          }
-          .image-container img {
-              width: 100%; /* Ensures images are fully responsive */
-              height: auto; 
-          }
-          .header h1 {
-              font-size: 1.8em; /* Adjust header size for smaller screens */
-          }
-          .box h2 {
-              font-size: 1.3em; /* Adjust section headers for readability */
-          }
-      }
+            .container {
+                grid-template-columns: repeat(12, 1fr);
+            }
+            .box-6col, .box-4col {
+                grid-column: span 12; /* Stack content for better readability */
+            }
+            .image-container img {
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 1.8em; /* Adjust header size for smaller screens */
+            }
+            .box h2 {
+                font-size: 1.3em; /* Adjust section headers for readability */
+            }
+        }
 
-      /* Larger screens */
-      @media (min-width: 769px) {
-          .container {
-              grid-template-columns: repeat(12, 1fr);
-          } 
-      }
-
-      /* Add grid layout for Ancient Wisdom section */
-      .wisdom-list {
-          display: grid; 
-          grid-template-columns: repeat(2, 1fr); 
-          gap: 10px; 
-      }
-
-      .wisdom-item { 
-          background-color: rgba(255, 255, 255, 0.8); 
-          padding: 15px; 
-          border-radius: 8px; 
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
-      }
-
-      .wisdom-title { 
-          font-size: 1.3em; 
-          margin-bottom: 10px; 
-      }
-
-      .author-box { 
-          text-align: right; /* Align text to the right */ 
-          color: #FFD700; 
-          text-shadow: 2px 2px 4px #000; 
-      } 
-
+        /* Adjust grid layout for Ancient Wisdom section */
+        .wisdom-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 10px;
+        }
+        .wisdom-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .wisdom-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .author-box {
+            text-align: right;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000;
+        }
     </style>
 </head>
 <body>
@@ -278,14 +257,15 @@
                 </li>
 
                 <!-- Transcending Ordinary Perception -->
-                <li class="wisdom-item">
+                
+            </ul>
+			<div class="wisdom-item">
                     <h3 class="wisdom-title">Transcending Ordinary Perception</h3>
                     <p>In the Bhagavad Gita Lord Krishna speaks about transcending ordinary perception for higher understanding resonating with quantum decoherence where observation shapes reality.</p>
                     <p><strong>Sanskrit:</strong> "यदा सत्त्वे प्रमाणं यदा चात्मनि स्थितम्। नूनं यस्तु महाप्रज्ञं तं युक्तं परमं यशः॥" —<i>Bhagavad Gita 14.6</i></p>
                     <p><strong>Translation:</strong> "When one's mind is purified and remains in higher wisdom they can transcend ordinary perceptions understanding reality's nature."</p>
                     <p>This aligns with transcending physical senses for perceiving ultimate reality akin to how quantum systems lose coherence when observed transitioning into definite states.</p>
-                </li>
-            </ul>
+             </div>
         </div>
     </div>
 
